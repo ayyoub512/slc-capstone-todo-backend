@@ -12,7 +12,7 @@ server.use(cors({ origin: CORS_ORIGIN || "*" })); // Allow CORS from specified o
 server.use(express.json());
 
 server.get("/api/", (req, res) => {
-	res.send('Welcome to the Task Manager API click here to check <a href="/tasks">tasks</a>');
+	res.send('Hello! Welcome to the Task Manager API click here to check <a href="/tasks">tasks</a>');
 });
 
 server.get("/api/health", (req, res) => {
